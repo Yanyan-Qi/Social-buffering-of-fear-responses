@@ -43,7 +43,7 @@ library(ggeffects)
 library(dplyr)
 library(effsize)
 
-data_path = 'D:social buffering 2/manuscript/submission/first submission/code and data for updating/SCR data/'
+data_path = 'D:social buffering 2/manuscript/submission/first submission/code and data for updating/SCR preprocessed data/'
 
 ## read into male alone data (aversive) ##
 
@@ -92,7 +92,6 @@ f_m_allsound$value <- log10(f_m_allsound$value+1)
 questionnaire <- read.csv("D:/social buffering 2/manuscript/submission/first submission/code and data for updating/male_female_questionnaires.csv",header = TRUE,sep = ';')
 names(questionnaire)[1]<- "subject"
 questionnaire$sumimpression <- questionnaire$pleasant+questionnaire$easier+questionnaire$helpfu+questionnaire$sympathetic
-f_m_aversivesound_questionnaires <- merge(f_m_aversivesound,questionnaire,by=c('gender','subject'),na.rm=TRUE)
 f_m_allsound_questionnaires <- merge(f_m_allsound,questionnaire,by=c('gender','subject'),na.rm=TRUE)
 
 ##################################statistics################################
