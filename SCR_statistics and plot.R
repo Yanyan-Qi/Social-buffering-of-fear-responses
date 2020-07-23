@@ -89,7 +89,7 @@ f_m_allsound <- rbind(m_allsound,f_allsound)
 f_m_allsound$value <- log10(f_m_allsound$value+1)
 
 # attach the questionnaires
-questionnaire <- read.csv("D:/social buffering 2/manuscript/submission/first submission/code and data for updating/male_female_questionnaires.csv",header = TRUE,sep = ';')
+questionnaire <- read.csv("D:/social buffering 2/manuscript/submission/first submission/code and data for updating/questionnaires data.csv",header = TRUE,sep = ';')
 names(questionnaire)[1]<- "subject"
 questionnaire$sumimpression <- questionnaire$pleasant+questionnaire$easier+questionnaire$helpfu+questionnaire$sympathetic
 f_m_allsound_questionnaires <- merge(f_m_allsound,questionnaire,by=c('gender','subject'),na.rm=TRUE)
