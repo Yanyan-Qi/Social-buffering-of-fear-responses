@@ -122,7 +122,7 @@ effsize::cohen.d(value~valence, f_m_allsound_questionnaires[f_m_allsound_questio
 
 
 # social buffering effect (all the participants)
-f_m_aversivesound_questionnaires <- f_m_aversivesound_questionnaires[f_m_aversivesound_questionnaires$valence =='aversive',]
+f_m_aversivesound_questionnaires <- f_m_allsound_questionnaires[f_m_allsound_questionnaires$valence =='aversive',]
 
 lmer2 <- lmer(value ~ treatment*gender+scale(ADS)+scale(significant.others)+scale(family)+scale(friends)+(1|subject),
               f_m_aversivesound_questionnaires)
