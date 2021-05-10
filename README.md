@@ -1,3 +1,3 @@
 # Social-buffering-of-fear-responses
 
-This repository includes the raw data and data analysis code for study "The mere physical presence of another individual reduces autonomic fear responses stronger in females than in males, but only if social anxiety is low"
+This repository includes the raw data and data analysis code for study "Social buffering of human fear is shaped by gender, social concern and the presence of real vs virtual agents "
